@@ -142,7 +142,8 @@ EXTENSION_SUFFIX = "" # e.g. "*"
 
 CORE = 'core'
 ATTIC = 'attic'
-ENABLED_EXTENSIONS = [ATTIC, 'auto', 'bib', 'health-lifesci', 'pending', 'meta', 'iot' ]
+
+ENABLED_EXTENSIONS = ['fhir', 'w5'  ]
 #### Following 2 lines look odd - leave them as is - just go with it!
 ALL_LAYERS = [CORE,'']
 ALL_LAYERS += ENABLED_EXTENSIONS
@@ -1296,16 +1297,16 @@ class ShowUnit (webapp2.RequestHandler):
     def getExtendedSiteName(self, layers):
         """Returns site name (domain name), informed by the list of active layers."""
         if layers==["core"]:
-            return "schema.org"
+            return "fhir.schema.org"
         if not layers or len(layers)==0:
-            return "schema.org"
+            return "fhir.schema.org"
         return (getHostExt() + ".schema.org")
 
-    def emitSchemaorgHeaders(self, node, ext_mappings='', sitemode="default", sitename="schema.org", layers="core"):
+    def emitSchemaorgHeaders(self, node, ext_mappings='', sitemode="default", sitename="fhir.schema.org", layers="w5 fhir"):
         self.response.out.write(self.buildSchemaorgHeaders(node, ext_mappings, sitemode, sitename, layers))
 
 
-    def buildSiteHeaders(self, term, ext_mappings='', sitemode="default", sitename="schema.org"):
+    def buildSiteHeaders(self, term, ext_mappings='', sitemode="default", sitename="fhir.schema.org"):
         """
         Generates, caches and emits HTML headers for class, property and enumeration pages. Leaves <body> open.
 
@@ -1336,7 +1337,7 @@ class ShowUnit (webapp2.RequestHandler):
         buff.close()
         return ret
 
-    def buildSchemaorgHeaders(self, node, ext_mappings='', sitemode="default", sitename="schema.org", layers="core"):
+    def buildSchemaorgHeaders(self, node, ext_mappings='', sitemode="default", sitename="fhir.schema.org", layers="w5 fhir"):
         """
         Generates, caches and emits HTML headers for class, property and enumeration pages. Leaves <body> open.
 
