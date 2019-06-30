@@ -47,8 +47,8 @@ See the draft <b><a href="{{staticPath}}/docs/releases.html">releases</a></b> pa
  <h2>Introduction</h2>
 
 <br />
-The <a href="www.hl7.org/FHIR">FHIR® – Fast Healthcare Interoperability Resources</a> are built from a set of modular
-      components called "Resources".  The definitions used in the various FHIR resources could potentially be viewed
+The <a href="https://www.hl7.org/fhir/">FHIR® – Fast Healthcare Interoperability Resources</a> are built from a set of modular
+      components called "Resources". The definitions used in the various FHIR resources could potentially be viewed
       as a set of loose "semantics" that could be used as markup for HTML, XML or JSON documents.
 
       <br /><br />
@@ -58,16 +58,16 @@ The <a href="www.hl7.org/FHIR">FHIR® – Fast Healthcare Interoperability Resou
       <br /><br />
       To accomplish this, we have created two schema.org extensions:
       <ol>
-          <li>The <a href="http://www.hl7.org/FHIR/resourceguide.html">FHIR W5 "ontology"</a> - this provides a upper level
-          classification of FHIR resources, as well as providing a basic list of "who, why, what, where and when" predicates</li>
+          <li>The <a href="https://www.hl7.org/fhir/fivews.html">FHIR W5 "ontology"</a> - this provides a upper level
+          classification of FHIR resources, as well as providing a basic list of "who, what, when, where and why" predicates.</li>
           <li>The FHIR resource definitions themselves - this is the set of resources and their attributes as defined in
           the FHIR core.</li>
       </ol>
       It would also be possible (and even sensible) to extend this core ontology with appropriate
-      FHIR <a href="http://www.hl7.org/FHIR/profiling.html">Profiles</a>
+      FHIR <a href="https://www.hl7.org/FHIR/profiling.html">Profiles</a>.
       <h2>Relationship to other schema.org schemas</h2>
       At the moment, there is almost no overlap between the FHIR schema elements and the components of the
-      <a href="http://schema.org/docs/schemas.html">core schema.org</a> schema.  The root node of the
+      <a href="https://schema.org/docs/schemas.html">core schema.org</a> schema.  The root node of the
       <a href="https://w5.fhir-schema-org.appspot.com/docs/full.html">W5 ontology</a> (<a href="https://w5.fhir-schema-org.appspot.com/w5">w5</a>)
       is currently a direct subclass of <a href="https://w5.fhir-schema-org.appspot.com/Thing">THING</a>.  All other
       classes in the W5 and FHIR schemas subclass W5 descendants.  The FHIR Resource inheritence  structure is also
@@ -76,7 +76,7 @@ The <a href="www.hl7.org/FHIR">FHIR® – Fast Healthcare Interoperability Resou
       <emph>Assuming</emph> that the FHIR schema.org resource can be proven to be potentially useful, an obvious next step
       would be to examine how the elements within it relate to:
       <ul>
-          <li>The proposed <a href="http://schema.org/docs/meddocs.html">Health and medical types</a> </li>
+          <li>The proposed <a href="https://schema.org/docs/meddocs.html">Health and medical types</a> </li>
           <li>The <a href="https://www.w3.org/wiki/WebSchemas/BioDatabases">BioDatabases proposal</a> (assuming we can find
           where it ended up in the schema.org space)</li>
           <li>Schema.org root classes themselves</li>
@@ -89,8 +89,8 @@ The <a href="www.hl7.org/FHIR">FHIR® – Fast Healthcare Interoperability Resou
           "w"'s (e.g. <a href="https://w5.fhir-schema-org.appspot.com/where">where</a>,
               <a href="https://w5.fhir-schema-org.appspot.com/who.actor">who.actor </a>, etc.) should be Classes or Properties and,
           if they are properties, what the appropriate domain(s) and range(s) are.</li>
-          <li>Determine whether the FHIR model should be grounded in the <a href="http://schema.org/DataType">schema.org datatypes</a>
-          or whether some or all of the <a href="www.hl7.org/FHIR/datatypes.html">FHIR "datatypes"</a> (quotes because the FHIR definition of "datatype" is quite different than
+          <li>Determine whether the FHIR model should be grounded in the <a href="https://schema.org/DataType">schema.org datatypes</a>
+          or whether some or all of the <a href="https://www.hl7.org/FHIR/datatypes.html">FHIR "datatypes"</a> (quotes because the FHIR definition of "datatype" is quite different than
           that used in data modeling) should be added to this list.</li>
           <li>Determine the appropriate level of granularity in the FHIR resources -- how much detail is required</li>
       </ul>
@@ -98,11 +98,11 @@ The <a href="www.hl7.org/FHIR">FHIR® – Fast Healthcare Interoperability Resou
 
       <h2>Tools, Links, etc.</h2>
       <ul>
-      <li>The source for this web site currently resides in the <a href="https://github.com/crDDI/schemaorg">crDDI/schemaorg</a> repository.</li>
-          <li><a href="https://github.com/crDDI/schemaorg/blob/sdo-deimos/data/ext/fhir/fhir.rdfa">fhir.rdfa</a> was built using from the
+      <li>The source for this web site currently resides in the <a href="https://github.com/lushacao/schemaorg">lushacao/schemaorg</a> repository.</li>
+          <li><a href="https://github.com/lushacao/schemaorg/blob/master/data/ext/fhir/fhir.rdfa">fhir.rdfa</a> was built using from the
               <a href="https://github.com/crDDI/fhir_to_sdo/blob/master/scripts/fhirtosdo">fhirtosdo</a> script
           <a href="https://github.com/crDDI/fhir_to_sdo">fhir_to_sdo</a> github repository </li>
-          <li><a href="https://github.com/crDDI/schemaorg/blob/sdo-deimos/data/ext/w5/w5.rdfa">w5.rdfa</a> was built using from the
+          <li><a href="https://github.com/lushacao/schemaorg/blob/master/data/ext/w5/w5.rdfa">w5.rdfa</a> was built using from the
               <a href="https://github.com/crDDI/fhir_to_sdo/blob/master/scripts/w5tosdo">w5tosdo</a> script
           <a href="https://github.com/crDDI/fhir_to_sdo">fhir_to_sdo</a> github repository </li>
       </ul>
