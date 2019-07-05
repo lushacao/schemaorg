@@ -68,8 +68,8 @@ The <a href="https://www.hl7.org/fhir/">FHIR® – Fast Healthcare Interoperabil
       <h2>Relationship to other schema.org schemas</h2>
       At the moment, there is almost no overlap between the FHIR schema elements and the components of the
       <a href="https://schema.org/docs/schemas.html">core schema.org</a> schema.  The root node of the
-      <a href="https://w5.fhir-schema-org.appspot.com/docs/full.html">W5 ontology</a> (<a href="https://w5.fhir-schema-org.appspot.com/w5">w5</a>)
-      is currently a direct subclass of <a href="https://w5.fhir-schema-org.appspot.com/Thing">THING</a>.  All other
+      <a href="http://w5.fhirsdo.clinicalprofiles.org">W5 ontology</a> (<a href="http://w5.fhirsdo.clinicalprofiles.org/w5">w5</a>)
+      is currently a direct subclass of <a href="http://w5.fhirsdo.clinicalprofiles.org/Thing">THING</a>.  All other
       classes in the W5 and FHIR schemas subclass W5 descendants.  The FHIR Resource inheritence  structure is also
       preserved.
       <br /><br />
@@ -86,8 +86,8 @@ The <a href="https://www.hl7.org/fhir/">FHIR® – Fast Healthcare Interoperabil
       <h2>Next steps</h2>
       <ul>
           <li>Determine whether the W5 model has been correctly represented.  In particular, we need to determine whether the
-          "w"'s (e.g. <a href="https://w5.fhir-schema-org.appspot.com/where">where</a>,
-              <a href="https://w5.fhir-schema-org.appspot.com/who.actor">who.actor </a>, etc.) should be Classes or Properties and,
+          "w"'s (e.g. <a href="http://w5.fhirsdo.clinicalprofiles.org/where">where</a>,
+              <a href="https://http://w5.fhirsdo.clinicalprofiles.org/who.actor">who.actor </a>, etc.) should be Classes or Properties and,
           if they are properties, what the appropriate domain(s) and range(s) are.</li>
           <li>Determine whether the FHIR model should be grounded in the <a href="https://schema.org/DataType">schema.org datatypes</a>
           or whether some or all of the <a href="https://www.hl7.org/FHIR/datatypes.html">FHIR "datatypes"</a> (quotes because the FHIR definition of "datatype" is quite different than
