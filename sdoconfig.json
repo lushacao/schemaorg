@@ -71,13 +71,23 @@
         },
         {
            "@type": "VocabDescriptor",
-           "id": "http://fhirsdo.clinicalprofiles.org",
+           "id": "http://fhir.schema.org",
            "extension": "fhir",
            "name": "fhir Section",
            "softwareVersion": "0.8",
            "linktext": "Defined in the %s Section.",
            "disambiguatingDescription": "terms relating to fhir.",
            "comment": "You are viewing the fhir Section within [schema.org](http://schema.org). It defines fhir resources. See full list below.  \n\nThe terms defined in this extension may be considered moderately stable, but some changes are still likely (including renaming and restructuring) through ongoing community collaboration. Organizations using this data are encouraged to join the community discussions linked here, and share their usage scenarios to help improve the schemas.\n\n  "
+        },
+        {
+           "@type": "VocabDescriptor",
+           "id": "http://w5.schema.org",
+           "extension": "w5",
+           "name": "w5 Section",
+           "softwareVersion": "0.8",
+           "linktext": "Defined in the %s Section.",
+           "disambiguatingDescription": "terms relating to w5.",
+           "comment": "You are viewing the w5 Section within [schema.org](http://schema.org). It defines w5 resources. See full list below.  \n\nThe terms defined in this extension may be considered moderately stable, but some changes are still likely (including renaming and restructuring) through ongoing community collaboration. Organizations using this data are encouraged to join the community discussions linked here, and share their usage scenarios to help improve the schemas.\n\n  "
         }
     ],
     "dataFeedElement": [
