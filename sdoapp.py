@@ -137,7 +137,7 @@ ENABLEMOREINFO = True
 WORKINGHOSTS = ["schema.org","schemaorg.appspot.com",
                 "webschemas.org","webschemas-g.appspot.com",
                 "sdo-test.appspot.com",
-                "localhost"]
+                "localhost", "fhirsdo.clinicalprofiles.org"]
 EXTENSION_SUFFIX = "" # e.g. "*"
 
 CORE = 'core'
