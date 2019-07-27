@@ -183,6 +183,24 @@
         },
         {
             "@type": "DataDownload",
+            "fileContent": "terms",
+            "contentLocation": "[[SCHEMAORGLOC]]/data/ext/fhir",
+            "contentFile": [
+                "fhir.rdfa"
+            ]
+
+        },
+        {
+            "@type": "DataDownload",
+            "fileContent": "terms",
+            "contentLocation": "[[SCHEMAORGLOC]]/data/ext/w5",
+            "contentFile": [
+                "w5.rdfa"
+            ]
+
+        },
+        {
+            "@type": "DataDownload",
             "fileContent": "examples",
             "contentLocation": "[[SCHEMAORGLOC]]/data/ext/health-lifesci",
             "contentFile": [
